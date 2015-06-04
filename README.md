@@ -28,9 +28,9 @@
 
 ## Run some tests
 
-The ScalaTest, the common Scala testing framework relies on a reflection which
-doesn't work with Scala.js. So lets look at the test written with another
-testing framework.
+The implementation of ScalaTest, the common Scala testing framework relies
+on reflection which doesn't work with Scala.js. So lets look at the test
+written with another testing framework.
 
 * Run the tests with the sbt task "test"
 * Add a test for the exception example
