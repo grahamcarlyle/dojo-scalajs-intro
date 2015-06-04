@@ -81,3 +81,5 @@ testing framework.
 
 * Add a select for choosing either primes or fibonacci numbers
 * Use the select state to choose which sequence to update the web page with
+* Start hacking on a spike of a project that uses scala on server and client
+ - https://github.com/grahamcarlyle/dojo-scalajs-play.git
