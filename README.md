@@ -54,3 +54,15 @@ testing framework.
    IntroApp.scala file
   - ```import js.Dynamic.global```
  - So jquery is available by calling ```global.jQuery```
+* re-compile and view your changes
+
+## Use typed wrapper library from Scala.js
+
+* Add the library dependency for scalajs-jquery to the project
+ - ```"be.doeraene" %%% "scalajs-jquery" % "0.8.0"```
+* `reload` the sbt project
+* Add an import for the typed jQuery to the IntroApp.scala file
+ - ```import org.scalajs.jquery.jQuery```
+* Replace the call to the global jQuery with a call to the scalajs-jquery one
+* re-compile and view your changes
+* Use your IDE to explore the types
