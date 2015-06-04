@@ -5,10 +5,10 @@
 * Clone the repo
 * Start sbt
 * Run the sbt task "fastOptJS"
- + this compiles the Scala to javascript in directory target/scala-2.11/
+ - this compiles the Scala to javascript in directory target/scala-2.11/
 * Open the HTML in a browser to check the javascript has been
   compiled correctly and run (file index.html)
- + Verify by looking for the scala println output from the main def
+ - Verify by looking for the scala println output from the main def
    has appeared in the console
 
 ## Get your IDE ready
@@ -40,3 +40,17 @@ testing framework.
 
 * Uncomment the Fibonacci test
 * Make it pass
+
+## Use a plain javascript library from Scala.js
+
+* [Docs for help](http://www.scala-js.org/doc/calling-javascript.html)
+* Add a script include before the include of the compiled scala js to
+  index.html to add jquery
+ ```<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/2.1.1/jquery.js"></script>```
+* Add a h1 tag with an id to the web page
+* Change the main method in the IntroApp to use jQuery to set the text of the
+  tag with some text
+ - there is already an import of the javascript global scope in the
+   IntroApp.scala file
+  - ```import js.Dynamic.global```
+ - So jquery is available by calling ```global.jQuery```
