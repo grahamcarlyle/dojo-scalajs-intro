@@ -76,3 +76,8 @@ testing framework.
 * Change the `onClick` method to set the contents of the div with the
   calculated primes
 * register the `onClick` method as a click handler for the button using jQuery
+
+## Further steps?
+
+* Add a select for choosing either primes or fibonacci numbers
+* Use the select state to choose which sequence to update the web page with
