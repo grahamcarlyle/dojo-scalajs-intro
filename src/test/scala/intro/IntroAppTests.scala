@@ -14,7 +14,7 @@ object EratosthenesTest extends SimpleTestSuite {
 //object FibonaccisTest extends SimpleTestSuite {
 //
 //  test("Fibonacci numbers") {
-//    assertEquals(IntroApp.fibonaccisUpTo(100), Seq(1, 1, 2))
+//    assertEquals(IntroApp.fibonaccisUpTo(2), Seq(1, 1, 2))
 //    assertEquals(IntroApp.fibonaccisUpTo(100), Seq(1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89))
 //  }
 //
