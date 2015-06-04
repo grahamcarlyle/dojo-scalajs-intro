@@ -2,7 +2,7 @@ package intro
 
 import scala.annotation.tailrec
 import scala.scalajs.js.JSApp
-import org.scalajs.jquery.jQuery
+import org.scalajs.jquery.{JQueryEventObject, jQuery}
 
 object IntroApp extends JSApp {
 
@@ -11,7 +11,14 @@ object IntroApp extends JSApp {
     val limit = 20
     println(s"""The primes numbers up to ${limit} are ${primesUpTo(limit).mkString(",")}""")
     jQuery("#msg").text("Goodbye!")
+    jQuery("#generate").click(onClick _)
+  }
 
+  def onClick(event: JQueryEventObject): Unit = {
+    event.preventDefault()
+    val limit = jQuery("#limit").value().toString.toInt
+    val primes = primesUpTo(limit)
+    jQuery("#msg").text(primes.mkString(", "))
   }
 
   def primesUpTo(limit: Int): Seq[Int] = {
