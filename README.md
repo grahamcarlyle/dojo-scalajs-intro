@@ -66,3 +66,13 @@ testing framework.
 * Replace the call to the global jQuery with a call to the scalajs-jquery one
 * re-compile and view your changes
 * Use your IDE to explore the types
+
+## Add a UI to the prime number generater
+
+* Add a form to the web page that has an input and a button
+* add a method `onClick` that uses jQuery to take the contents of the input
+  and call the prime number function with it as the limit parameter
+* add a div to the web page
+* Change the `onClick` method to set the contents of the div with the
+  calculated primes
+* register the `onClick` method as a click handler for the button using jQuery
