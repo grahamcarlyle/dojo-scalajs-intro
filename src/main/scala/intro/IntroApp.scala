@@ -2,6 +2,8 @@ package intro
 
 import scala.annotation.tailrec
 import scala.scalajs.js.JSApp
+import scala.scalajs.js
+import js.Dynamic.global
 
 object IntroApp extends JSApp {
 
@@ -9,6 +11,8 @@ object IntroApp extends JSApp {
     println("Hello world!")
     val limit = 20
     println(s"""The primes numbers up to ${limit} are ${primesUpTo(limit).mkString(",")}""")
+    global.jQuery("#msg").text("Goodbye!")
+
   }
 
   def primesUpTo(limit: Int): Seq[Int] = {
